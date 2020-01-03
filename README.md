@@ -1,2 +1,1 @@
-# tf-module-instance
-Módulo auxilia na criação de um recurso EC2 na AWS com Terraform
+# Módulo EC2 Terraform (Versão 0.11.8)
