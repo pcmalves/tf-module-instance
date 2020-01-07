@@ -4,7 +4,7 @@ variable "instance_type" {}
 
 variable "key_name" {}
 
-variable "security_groups" {}
+variable "security_groups_id" {}
 
 variable "subnet_id" {}
 
