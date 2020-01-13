@@ -1,17 +1,12 @@
+type = "list"
+
 variable "ami" {}
-
 variable "instance_type" {}
-
 variable "key_name" {}
-
-variable "vpc_security_group_ids" {}
-
-variable "subnet_id" {}
-
-variable "user_data" {}
+variable "name_instance" {}
 
 variable "root_block_device" {
-  type = "list"
+  variable "subnet_id"{}
+  variable "user_data"{}
+  variable "vpc_security_group_ids"{}
 }
-
-variable "name" {}
