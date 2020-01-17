@@ -14,7 +14,7 @@ module "instance" {
   name                   = "${var.name_instance}"
   root_block_device      = "${var.root_block_device}"
   subnet_id              = "${module.vpc-main.subnet_id}"
-  user_data              = "${data.template_file.awx-server-userdata.rendered}"
+  user_data              = "${var.userdata}"
   vpc_security_group_ids = "${aws_security_group.sg_awx_server.id}"
 
   tags = {
